@@ -1,12 +1,16 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
 
 android {
-    compileSdkVersion 34
+    namespace "com.example.simple_expense"
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.simple_expense"
-        minSdkVersion 21
-        targetSdkVersion 34
+        minSdk 21
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
